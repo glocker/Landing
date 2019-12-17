@@ -105,7 +105,7 @@ body {
 	width: 100%;
 	height: 100vh;
   max-height: 740px;
-	background: url("../Landing/img/Mountains.png") center no-repeat;
+	background: url("../img/Mountains.png") center no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
@@ -389,7 +389,7 @@ h1 {
 .founders {
   min-height: 650px;
   width: 100%;
-  background: url("../Landing/img/Founders_bg.png") center no-repeat;
+  background: url("../img/Founders_bg.png") center no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
 }
