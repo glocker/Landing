@@ -641,26 +641,14 @@ input[name="password"] {
 }
 
 .footer_container {
-  flex-grow: 2;
   padding-top: 95px;
   padding-left: 150px;
   /*justify-content: center;*/
 }
-/*
-.footer_row1, .footer_row2 {
-	display: flex;
-	justify-content: space-between;
-}
-
-.footer_row1, .footer_row2 > div {
-  background: #475adf;
-  
-  /*padding-left: 60px;
-}*/
 
 .footer_grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 150px;
   grid-template-rows: 75px 100px;
   grid-row-gap: 10px;
   grid-column-gap: 35px;
@@ -744,16 +732,10 @@ input[type="image"] {
 }
 
 .footer_right {
-
+  align-content: end;
 }
 
 .footer_triangle {
-  width: 0;
-  height: 0;
   border-top: 23vw solid #fb8686;
   border-left: 23vw solid transparent;
-  position: relative;
-  float: right;
-  right: 0; 
-  bottom: 0;
 }
