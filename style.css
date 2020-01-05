@@ -132,7 +132,7 @@ h1 {
 }
 
 .btn_play {
-  
+  height: 120px;
   padding-top: 30px;
 
 }
@@ -165,7 +165,6 @@ h1 {
 
 .btn_trynow {
   align-self: center;
-  
   max-width: 190px;
   border: 2px solid #ff6d6d;
   border-radius: 3%;
@@ -229,7 +228,6 @@ h1 {
   -webkit-flex: 1;
   flex: 1;
   /* height: 100%; */
-
   background-color: #ececec;
   
 }
@@ -648,7 +646,7 @@ input[name="password"] {
 
 .footer_grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 150px;
+  grid-template-columns: 2fr 1fr 1fr 215px;
   grid-template-rows: 75px 100px;
   grid-row-gap: 10px;
   grid-column-gap: 35px;
@@ -732,7 +730,7 @@ input[type="image"] {
 }
 
 .footer_right {
-  align-content: end;
+  justify-content: space-between;
 }
 
 .footer_triangle {
