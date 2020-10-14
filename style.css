@@ -97,7 +97,7 @@ body {
 	width: 100%;
 	height: 100vh;
   max-height: 740px;
-	background: url("../img/Mountains.png") center no-repeat;
+	background: url("img/Mountains.png") center no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
@@ -242,14 +242,30 @@ h1 {
                     /* Section New Features*/
 
                     /* Header*/
+.top-images {
+  display: flex;
+  justify-content: space-around;
+  
+}
 
 #pen_holder {
+  position: relative;
   height: 305px;
   width: 270px;
   vspace: -100px;
+  z-index: 99;
+
+}
+
+#earphones {
+  position: relative;
+  z-index: 99;
+  width: 213px;
+  height: 279px;
 }
 
 .new_features {
+
   display: flex;
   flex-wrap: wrap;
   background-color: #f6f5f3; 
@@ -259,12 +275,14 @@ h1 {
 }
 
 .features_header {
+  position: absolute;
   padding-top: 130px;
   align-self: center;
   text-align: center;
 }
 
 .features_title {
+  
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 400;
@@ -272,6 +290,7 @@ h1 {
 }
 
 .features_subtitle {
+  
   font-size: 40px;
   font-weight: 400;
 }
@@ -280,7 +299,6 @@ h1 {
 
 .features_container {
   display: flex;
-  padding-top: 90px;
   justify-content: center;
 }
 
@@ -635,13 +653,12 @@ input[name="password"] {
 .footer {
   min-height: 333px;
   display: flex;
-
+  justify-content: flex-end;  
 }
 
 .footer_container {
   padding-top: 95px;
   padding-left: 150px;
-  /*justify-content: center;*/
 }
 
 .footer_grid {
@@ -710,10 +727,12 @@ input[name="password"] {
 .email {
   min-height: 50px; 
   width: 265px;
+
 }
 
 input[type="text"] {
-  border: none;
+  border: 1px solid #b8b8bf;
+  border-radius: 3px;
   outline: none;
   -webkit-appearance: none;
   width: 215px;
@@ -722,15 +741,23 @@ input[type="text"] {
   padding: 15px 20px;
 }
 
-input[type="image"] {
-  position: relative;
-  right: 40px;
-  top: 10px;
-  color: blue;
+input[type="submit"] {
+  background: url(img/icons/capture.png) no-repeat;
+  background-position: center;
+  
+  border-radius: 3px;
+  margin-left: -5px; 
+  padding-bottom: 1px; 
+  height: 51px;
+  width: 51px;
+}
+
+input[type=submit]::hover {
+  
 }
 
 .footer_right {
-  justify-content: space-between;
+  
 }
 
 .footer_triangle {
