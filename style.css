@@ -756,6 +756,12 @@ input[type=submit]::hover {
   
 }
 
+.social_icons {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
 .footer_right {
   
 }
