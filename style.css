@@ -690,14 +690,13 @@ input[name="password"] {
 }
 
 .ex {
-  width: 0;
-  height: 0;
-  border-top: 50px solid transparent;
-  border-left: 100px solid #ff6d6d;
-  border-bottom: 50px solid transparent;
-  border-radius: 25%;
-  color: #ff6d6d;
-  transform: translate(0, 0) scale(0.7);  
+  width: 43px; 
+  height: 47px;
+  position: relative;
+  bottom: 35px;
+  left: 55px;
+  color: black; 
+  margin: 0;
 }
 
 .support {
