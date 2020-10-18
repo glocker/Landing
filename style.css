@@ -502,29 +502,28 @@ h1 {
 
 }
 
-.title {
+.join .header h2 {
    text-transform: uppercase;
    font-size: 16px;
+   font-family: 'Exo';
    font-weight: 400;
    color: #ff6d6d;
    text-align: center;
 }
 
-.subtitle {
+.join .header h3 {
   text-align: center;
   font-size: 40px;
+  font-family: 'Exo';
   font-weight: 400;
   color: #ffffff;
 }
 
-.grid_forms {
-  grid-template-rows: 132px 46px;
-  grid-template-columns: 215px 215px 215px 215px;
-  grid-template-areas: 
-    ". . . upper_title"
-    "name email password btn";
-  grid-row-gap: 15px;
-  grid-column-gap: 30px;
+.join_forms_container {
+  font-family: 'Exo';
+  font-size: 16px;
+  font-weight: 400;
+
 }
 
 .upper_title {
@@ -533,7 +532,6 @@ h1 {
   display: flex;
   justify-content: flex-end;
   padding-right: 290px;
-  grid-area: upper_title;
 }
 
 .upper_arrow {
@@ -599,41 +597,26 @@ h1 {
 .form {
   padding-top: 15px;
   text-align: center;
-  
-
 }
 
 .form input {
-  padding-bottom: 2px;
-  background: #464c77;
-  padding: 15px 20px;
+  background-color: #464c77;
   color: #dfdee2;
-  border: 1.5px solid #999cb4;
-  border-radius: 4%;
   margin-right: 30px;
-}
-
-input[name="name"] {
-  grid-area: name;
-}
-
-input[name="email"] {
-  grid-area: email;
-}
-
-input[name="password"] {
-  grid-area: password;
+  border: 1px solid #b8b8bf;
+  border-radius: 3px;
+  outline: none;
+  -webkit-appearance: none;
+  width: 215px;
+  vertical-align: middle;
+  padding: 15px 20px;
 }
 
 .btn {
-  grid-area: btn;
-  max-width: 190px;
   border: 1.5px solid #ff6d6d;
   border-radius: 4%;
   color: #fff;
   background-color: #ff6d6d;
-  font-size: 16px;
-  font-weight: 100;
   text-transform: uppercase;
   padding: 15px 90px;
 }
@@ -653,12 +636,14 @@ input[name="password"] {
 .footer {
   min-height: 333px;
   display: flex;
-  justify-content: flex-end;  
+  justify-content: flex-end; 
+  font-weight: 400; 
 }
 
 .footer_container {
   padding-top: 95px;
   padding-left: 150px;
+  flex-grow: 2;
 }
 
 .footer_grid {
@@ -672,15 +657,17 @@ input[name="password"] {
 
 .medium {
   font-size: 24px;
-  font-weight: 700;
-  position: relative;
+  font-weight: 400;
+  font-family: 'Exo';
   padding-top: 3vmin;
 }
 
 .regular {
-  font-size: 16px;
+  font-family: 'Exo';
+  font-size: 14px;
   font-weight: 400;
   color: #8a8a8a;
+  line-height: 2;
 }
 
 .start {
@@ -693,10 +680,15 @@ input[name="password"] {
   width: 43px; 
   height: 47px;
   position: relative;
-  bottom: 35px;
-  left: 55px;
-  color: black; 
+  bottom: 62px;
+  left: 58px;
+  color: white; 
   margin: 0;
+  background-image: url(img/Icons/triangle_ex.png);
+}
+
+.ex p {
+  transform: translate(5%, 20%);
 }
 
 .support {
@@ -726,10 +718,9 @@ input[name="password"] {
 .email {
   min-height: 50px; 
   width: 265px;
-
 }
 
-input[type="text"] {
+.email input[type="text"] {
   border: 1px solid #b8b8bf;
   border-radius: 3px;
   outline: none;
@@ -743,7 +734,6 @@ input[type="text"] {
 input[type="submit"] {
   background: url(img/icons/capture.png) no-repeat;
   background-position: center;
-  
   border-radius: 3px;
   margin-left: -5px; 
   padding-bottom: 1px; 
@@ -762,7 +752,7 @@ input[type=submit]::hover {
 }
 
 .footer_right {
-  
+  flex-grow: 1;
 }
 
 .footer_triangle {
