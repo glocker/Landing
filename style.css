@@ -242,7 +242,9 @@ h1 {
 }
 
                     /* Section New Features*/
-
+.new_features {
+  z-index: 3;
+}
                     /* Header*/
 .top-images {
   display: flex;
@@ -324,11 +326,24 @@ h1 {
   text-align: center;
 }
 
+.bottom-image {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: 125px;
+  z-index: 5;
+}
+
+.bottom-image img {
+  
+}
+
                     /* Section MacBook */
 
 .macbook {
   min-height: 550px;
   display: flex;
+  z-index: -1;
 }
 
                     /* Mac Left */
@@ -386,14 +401,7 @@ h1 {
   color: #717171;
 }
 
-.bottom-image {
-  display: flex;
-  justify-content: flex-end;
-}
 
-.bottom-image img {
-
-}
 
                     /* Founders */
 
