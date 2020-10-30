@@ -330,12 +330,20 @@ h1 {
   display: flex;
   justify-content: flex-end;
   position: relative;
-  top: 125px;
-  z-index: 5;
+  top: 10vh;
 }
 
 .bottom-image img {
-  
+
+}
+
+.square-shape {
+  width: 158px;
+  height: 61px;
+  background: white;
+  position: relative;
+  top: 117px;
+  right: 194px;  
 }
 
                     /* Section MacBook */
@@ -343,7 +351,6 @@ h1 {
 .macbook {
   min-height: 550px;
   display: flex;
-  z-index: -1;
 }
 
                     /* Mac Left */
