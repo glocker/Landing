@@ -83,6 +83,21 @@ h1, h2, h3, h4, h5, h6 {
        url('../fonts/lato-v16-latin-regular.svg#Lato') format('svg'); 
 }
 
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 767px) {
+  /* New Design */
+  .new_design .container_left .section_header {
+    padding: 5vw;
+  }
+  /* New Features */
+}
 
 body {
 	margin: 0;
