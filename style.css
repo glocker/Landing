@@ -83,21 +83,7 @@ h1, h2, h3, h4, h5, h6 {
        url('../fonts/lato-v16-latin-regular.svg#Lato') format('svg'); 
 }
 
-@media (max-width: 1200px) {
 
-}
-
-@media (max-width: 992px) {
-
-}
-
-@media (max-width: 767px) {
-  /* New Design */
-  .new_design .container_left .section_header {
-    padding: 5vw;
-  }
-  /* New Features */
-}
 
 body {
 	margin: 0;
@@ -224,8 +210,8 @@ h1 {
 }
 
 .section_header {
-  padding-top: 180px;
-  padding-left: 150px;
+  padding-top: 30vh;
+  padding-left: 7vw;
 }
 
 .section_subtitle {
@@ -241,12 +227,12 @@ h1 {
 }
 
 .container_right {
-  -webkit-box-flex: 1;
   -webkit-flex: 1;
   flex: 1;
   /* height: 100%; */
   background-color: #ececec;
-  
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .triangle_bottom_right {
@@ -801,4 +787,26 @@ input[type=submit]::hover {
 .footer_triangle {
   border-top: 23vw solid #fb8686;
   border-left: 23vw solid transparent;
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 767px) {
+  /* Design */
+  .section_header {
+    padding-top: 5vw;
+    padding-left: 5vw;
+  }
+
+  .triangle_bottom_right {
+    margin-top: 19vh;
+  }
+  /* New Features */
+
 }
