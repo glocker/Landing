@@ -254,8 +254,8 @@ h1 {
 
 #pen_holder {
   position: relative;
-  height: 305px;
-  width: 270px;
+  height: 219px;
+  width: 185px;
   vspace: -100px;
   z-index: 99;
 
@@ -331,7 +331,7 @@ h1 {
   display: flex;
   justify-content: flex-end;
   position: relative;
-  top: 10vh;
+  top: 75px;
 }
 
 .bottom-image img {
@@ -807,6 +807,38 @@ input[type=submit]::hover {
   .triangle_bottom_right {
     margin-top: 19vh;
   }
-  /* New Features */
+  /* Features */
+  .top-images {
+    justify-content: space-between;
+  }
 
+  .square-shape {
+    height: 45px;
+  }
+
+  /* Macbook */  
+  .clip {
+    width: 40vw;
+    height: 40vh;
+  }
+
+  .sample_mac {
+    padding: 5vw;
+    top: 0px;
+    bottom: 75px;
+  }
+
+  .macbook-image {
+    width: 300px;
+    height: 150px;
+  }
+
+  .mac_left {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .container_info {
+    padding: 4vh;
+  }
 }
