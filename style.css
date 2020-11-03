@@ -416,7 +416,7 @@ h1 {
 .founders {
   min-height: 650px;
   width: 100%;
-  background: url("../img/Founders_bg.png") center no-repeat;
+  background: url('img/Founders_bg.png') center no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
 }
@@ -429,6 +429,8 @@ h1 {
 
 .column {
   width: 30%;
+  display: flex;
+  flex-direction: column;
 }
 
 .co-founders_logo {
@@ -436,8 +438,7 @@ h1 {
   height: 76px;
   background-color: #4e4e5e;
   border: solid #1d1e24;
-  position: relative;
-  left: 42.5%
+  align-self: center;
 }
 
 .co-founders_header {
@@ -469,28 +470,28 @@ h1 {
 
 .partners {
   padding-top: 95px;
+  padding-left: 5vw;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .partner_logo {
-  width: 15%;
+  width: 20%;
 
 }
 
 
                     /* Browser */
 .browser {
-  min-height: 755px;
+  /*min-height: 755px;*/
 }
 
 .browser_container {
-  display: flex-column;
+
 }
 
 .browser_header {
   padding-top: 130px;
-  align-self: center;
   text-align: center;
   text-transform: uppercase;
   font-size: 16px;
@@ -505,14 +506,16 @@ h1 {
 }
 
 .browser_text {
-  padding-top: 50px;
+  padding: 2vh;
   text-align: center;
-
 }
 
 .browser_pic {
   padding-top: 110px;
   text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
 }
 
                     /* Join */
@@ -816,7 +819,7 @@ input[type=submit]::hover {
     height: 45px;
   }
 
-  /* Macbook */  
+  
   .clip {
     width: 40vw;
     height: 40vh;
@@ -841,4 +844,49 @@ input[type=submit]::hover {
   .container_info {
     padding: 4vh;
   }
+
+  /* Browser */
+  .browser_pic {
+    padding: 0 3vw 0 3vw;
+  }
+
+  .browser_pic img {
+    width: 660px;
+    height: 300px;
+  }
+
+  .browser_text {
+    padding: 7vw;
+  }
+
+  /* Join */
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form input {
+    margin: 2vw;
+  }
+
+  .form .btn {
+    margin: 3vw;
+  }
+
+  .upper_title {
+    flex-direction: column-reverse;
+    position: relative;
+    top: 30vh;
+  }
+
+  .upper_arrow {
+    padding: 0 0 0 25vw;
+  }
+
+  .upper_text {
+    padding: 0 0 0 5vw;
+  }
+
 }
