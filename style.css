@@ -91,6 +91,31 @@ body {
   font-family: 'Exo';
 }
 
+.header-template {
+  color: #ff6d6d;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+.subtitle-template {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.subtitle-template span {
+  font-size: 40px;
+  letter-spacing: 4px;
+  color: #ff6d6d;
+}
+
+.text-template {
+  font-size: 16px;
+  font-weight: 500;
+  color: #8a8a8a;
+}
+
 
                     /* Intro */
 
@@ -110,13 +135,6 @@ body {
 }
 
 .container {
-  
-
-	/*padding-top: 139px; 
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 146px;
-  */
 	width: 100%;
 	display: flex;
   justify-content: space-between;
@@ -137,7 +155,6 @@ h1 {
 .btn_play {
   height: 120px;
   padding-top: 30px;
-
 }
 
 .btn_circle {
@@ -149,7 +166,6 @@ h1 {
   padding: 43px auto auto 0px;
   margin-left: auto;
   margin-right: auto;
-  
 }
 
 .btn_triangle {
@@ -161,9 +177,7 @@ h1 {
   margin-right: auto;
   margin-left: auto;
   margin-top: 20px;
-  
   transform: translate(5%, -100%) scale(0.2);
-
 }
 
 .btn_trynow {
@@ -174,7 +188,7 @@ h1 {
   color: #fff;
   background-color: #ff6d6d;
   font-size: 16px;
-  font-weight: 100;
+  font-weight: 400;
   text-transform: uppercase;
   padding: 18px 50px 20px 50px;
   text-decoration: none;
@@ -187,7 +201,7 @@ h1 {
   color: #7e7f81;
 }
 
-                    /* Section New design*/
+                    /* Section Design*/
 
 .new_design {
   max-height: 725px;
@@ -254,8 +268,8 @@ h1 {
 
 #pen_holder {
   position: relative;
-  height: 219px;
-  width: 185px;
+  height: 237px;
+  width: 175px;
   vspace: -100px;
   z-index: 99;
 
@@ -284,18 +298,7 @@ h1 {
   text-align: center;
 }
 
-.features_title {
-  
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 400;
-  color: #ff6d6d;
-}
 
-.features_subtitle {
-  font-size: 40px;
-  font-weight: 400;
-}
 
                     /* Boxes*/
 
@@ -316,14 +319,11 @@ h1 {
   padding-top: 30px;
   text-align: center; 
   font-size: 22px;
-  font-weight: 700; 
+  font-weight: 400; 
 }
 
 .feature_text {
   padding-top: 20px;
-  font-size: 16px;
-  font-weight: 400;
-  color: #282828;
   text-align: center;
 }
 
@@ -388,25 +388,13 @@ h1 {
   
 }
 
-.container_header {
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 400;
-  color: #ff6d6d;
-}
-
 .container_subtitle {
   padding-top: 30px;
-  font-size: 40px;
-  font-weight: 700;
-  color: #282828;
+  font-weight: 400;
 }
 
 .container_text {
   padding-top: 35px;
-  font-size: 16px;
-  font-weight: 400;
-  color: #717171;
 }
 
 
@@ -470,7 +458,7 @@ h1 {
 
 .partners {
   padding-top: 95px;
-  padding-left: 5vw;
+  padding-left: 2vw;
   display: flex;
   justify-content: space-around;
 }
@@ -493,16 +481,10 @@ h1 {
 .browser_header {
   padding-top: 130px;
   text-align: center;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 400;
-  color: #ff6d6d;
 }
 
 .browser_subtitle {
   text-align: center;
-  font-size: 40px;
-  font-weight: 400;
 }
 
 .browser_text {
@@ -529,22 +511,18 @@ h1 {
 
 }
 
-.join .header h2 {
-   text-transform: uppercase;
-   font-size: 16px;
-   font-family: 'Exo';
-   font-weight: 400;
-   color: #ff6d6d;
+.header h2 {
    text-align: center;
-   letter-spacing: 3px;
 }
 
-.join .header h3 {
+.header h3 {
   text-align: center;
-  font-size: 40px;
   font-family: 'Exo';
-  font-weight: 400;
   color: #ffffff;
+}
+
+.subtitle-template span {
+  color: #ffffff; 
 }
 
 .join_forms_container {
@@ -811,12 +789,16 @@ input[type=submit]::hover {
     margin-top: 19vh;
   }
   /* Features */
+  .features_header {
+    padding-top: 25vh;
+  }
+
   .top-images {
     justify-content: space-between;
   }
 
   .square-shape {
-    height: 45px;
+    height: 50px;
   }
 
   
@@ -842,7 +824,7 @@ input[type=submit]::hover {
   }
 
   .container_info {
-    padding: 4vh;
+    padding: 10vh 4vh 0vh 0vh;
   }
 
   /* Browser */
